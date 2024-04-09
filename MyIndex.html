@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalabel=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Css Tutorial</title>
+    <link rel="stylesheet" href="./fonts/vazir.css">
+    <link rel="stylesheet" href="http://cdn.font-store.ir/nazanin.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+</head>
+
+<body>
+    <header dir="rtl">
+        سلام فراوان
+        <br> لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته
+        شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی
+        شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد
+        آنها با استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا مرحله طراحی و صفحه‌بندی را به پایان برند.
+        <br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis enim veniam eveniet iste voluptate cupiditate, vitae, ipsa sed quidem, accusantium tenetur dignissimos ex sequi odio nulla at aperiam voluptatum delectus.</p>
+    </header>
+
+    <div class="textred">
+        textred
+    </div>
+    <div class="backgroundyellow">
+        backgroundyellow
+    </div>
+    <div class="textred backgroundyellow">
+        textred backgroundyellow
+    </div>
+    <div id="back2">
+        back2
+    </div>
+    <div id="back2" class="textred">
+        back2 textred
+    </div>
+    <div id="back2">
+        Hello <span class="textred">World</span> Again!
+    </div>
+    <div class="backgroundyellow">
+        Hello <span class="textred">World</span> Again!
+    </div>
+
+    <a href="www.example1.com">example 1</a>
+    <a href="www.example12.com">example 2</a>
+    <a href="www.example123.com">example 3</a>
+    <a href="www.example.org">example 3</a>
+    <br>
+
+    <div class="item1 item2 item3">
+        Hello Again!
+    </div>
+
+
+    <!--------------------------------------------------------->
+    <table class="ccs_selectors_classes" style="width:100%">
+        <tr class="tableheader">
+            <th colspan="4">CSS Selectors (classes)</th>
+        </tr>
+        <tr class="tableheader">
+            <th colspan="2">.class1 .class2</th>
+            <th colspan="2">.class1.class2</th>
+        </tr>
+
+        <tr class="tableheader">
+            <th>
+                <div class="t1">
+                    <div class="t11">
+                        <pre>class=" " 
+                             class=" "
+                        </pre>
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="t1 t11">
+                    <pre>class="         " 
+                    </pre>
+                </div>
+            </th>
+            <th>
+                <div class="t2">
+                    <div class="t22">
+                        <pre>class=" " 
+                             class=" "
+                        </pre>
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="t2 t22">
+                    <pre>class="         " 
+                    </pre>
+                </div>
+            </th>
+        </tr>
+    </table>
+    <!--------------------------------------------------------->
+    <table class="ccs_selectors" style="width:100%">
+        <tr class="tableheader">
+            <th colspan="4">CSS Selectors</th>
+        </tr>
+        <tr class="tableheader">
+            <th>></th>
+            <th>+</th>
+            <th>~</th>
+            <th>' '</th>
+        </tr>
+        <tr>
+            <th>
+                <span>span</span>
+                <br>
+                <li class="first">
+                    <span>li > span</span>
+                    <br>
+                    <a href="#internal">
+                        li > a
+                        <br>
+                        <span>li > a > span</span>
+                        <br>
+                        <span>li > a > span</span>
+                        <br>
+                    </a>
+                    <span>li > span</span>
+                    <br>
+                    <span>li > span</span>
+                    <br>
+                </li>
+                <span>span</span>
+                <br>
+                <span>span</span>
+                <br>
+            </th>
+            <th>
+                <span>span</span>
+                <br>
+                <li class="second">
+                    <span>li > span</span>
+                    <br>
+                    <a href="#internal">
+                        li > a
+                        <br>
+                        <span>li > a > span</span>
+                        <br>
+                        <span>li > a > span</span>
+                        <br>
+                    </a>
+                    <span>li > span</span>
+                    <br>
+                    <span>li > span</span>
+                    <br>
+                </li>
+                <span>span</span>
+                <br>
+                <span>span</span>
+                <br>
+            </th>
+            <th>
+                <span>span</span>
+                <br>
+                <li class="third">
+                    <span>li > span</span>
+                    <br>
+                    <a href="#internal">
+                        li > a
+                        <br>
+                        <span>li > a > span</span>
+                        <br>
+                        <span>li > a > span</span>
+                        <br>
+                    </a>
+                    <span>li > span</span>
+                    <br>
+                    <span>li > span</span>
+                    <br>
+                </li>
+                <span>span</span>
+                <br>
+                <span>span</span>
+                <br>
+            </th>
+            <th>
+                <span>span</span>
+                <br>
+                <li class="forth">
+                    <span>li > span</span>
+                    <br>
+                    <a href="#internal">
+                        li > a
+                        <br>
+                        <span>li > a > span</span>
+                        <br>
+                        <span>li > a > span</span>
+                        <br>
+                    </a>
+                    <span>li > span</span>
+                    <br>
+                    <span>li > span</span>
+                    <br>
+                </li>
+                <span>span</span>
+                <br>
+                <span>span</span>
+                <br>
+            </th>
+        </tr>
+    </table>
+
+
+
+    <!--------------------------------------------------------->
+
+
+
+    <div id="mypsudo">psudo class</div>
+    <div>After mypsudo</div>
+
+
+    <div class="ModelBoxTest">
+        Model Box Test
+
+    </div>
+
+    <img src="./css/S63.jpg" alt="Cabriolet" id="cabriolet">
+
+    <div class="textstyles">
+        Text styles
+    </div>
+
+
+
+</body>
+
+</html>

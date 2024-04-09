@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "Vazir";
+    src: url(../fonts/Vazir-Medium.eot);
+    src: url(../fonts/Vazir-Medium.eot) format("embedded-opentype"), url(../fonts/Vazir-Medium.woff2) format("woff2"), url(../fonts/Vazir-Medium.woff) format("woff"), url(../fonts/Vazir-Medium.ttf) format("truetype");
+}
+
+header {
+    background-color: khaki;
+}
+
+body {
+    padding: 5px;
+}
+
+#back2 {
+    background-color: darksalmon;
+}
+
+.backgroundyellow {
+    background-color: yellow;
+}
+
+.textred {
+    color: red;
+}
+
+.textred.backgroundyellow {
+    font-weight: bold;
+}
+
+
+/* back2=parent textred=child because of space between them*/
+
+#back2 .textred {
+    font-style: italic;
+}
+
+a[href] {
+    color: rgb(115, 40, 177);
+}
+
+a[href*="example12"] {
+    color: rgb(49, 192, 36);
+}
+
+a[href="www.example123.com"] {
+    color: rgb(22, 204, 236);
+}
+
+a[href$=".org"] {
+    color: rgb(177, 214, 9);
+}
+
+div[class="item1"] {
+    color: red;
+}
+
+div[class~="item1"] {
+    background-color: yellow;
+}
+
+.tableheader {
+    font-weight: bolder;
+}
+
+table {
+    margin: 50px 0;
+}
+
+table tr th {
+    padding: 6px;
+    margin: 5px;
+    border: groove;
+}
+
+.t1 .t11 {
+    color: violet;
+}
+
+.t2.t22 {
+    color: violet;
+}
+
+
+/* select just childs */
+
+li.first>span {
+    background-color: brown;
+}
+
+li.second+span {
+    background-color: brown;
+}
+
+li.third~span {
+    background-color: brown;
+}
+
+li.forth span {
+    background-color: brown;
+}
+
+#mypsudo:hover {
+    background-color: orange;
+}
+
+#mypsudo::after {
+    content: " After";
+    color: green;
+}
+
+div.ModelBoxTest {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 4px dotted blue;
+    /*marg  in: 15px 0px;*/
+    text-align: center;
+    color: tomato;
+    box-sizing: border-box;
+    /*background-color: yellow;
+    background-image: linear-gradient(to right, rgba(17, 231, 17, 0.5), rgba(52, 97, 243, 0.5)), url(./S63.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-origin: border-box;
+    background-clip: padding-box;
+    background-attachment: fixed;*/
+    background: 0 50px/cover no-repeat fixed border-box padding-box;
+    background-image: linear-gradient(to right, rgba(17, 231, 17, 0.5), rgba(52, 97, 243, 0.5)), url(./S63.jpg);
+    opacity: 0.8;
+    filter: blur(1px);
+}
+
+
+/* To select all the elements that are inside the class then use: 
+.header * {
+    font-weight: bold;
+} */
+
+img#cabriolet {
+    width: 90%;
+    /*margin: 60px;*/
+    object-fit: fill;
+    object-position: left;
+    filter: drop-shadow(30px 50px 20px rgb(68, 55, 55));
+}
+
+header {
+    font: bold medium/1.8 Vazir, serif;
+    /*font: bold medium/1.8 nazanin, serif;*/
+}
+
+div.textstyles {
+    margin: 15px;
+    font-size: xx-large;
+    text-decoration: underline wavy;
+    text-shadow: 2px 2px 1px yellow;
+    text-align: left;
+    /*white-space: pre;*/
+    word-break: keep-all;
+}
+
+
+/*
+percentage(%).
+em: Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width.
+rem: Font size of the root element.
+vw: 1% of the viewport's width.
+vh: 1% of the viewport's height.
+For Font size-> %
+For Body:   For Parent->    rem
+            For Child->     em
+For Model Box: 
+            For Margin & Padding->    rem
+            For Border->    px
+Width & Height->    % - vw -vh
+Position->   %
+*/
+
+
+/*
+header,
+section,
+aside,
+footer {
+  margin: 0 1.5rem 2rem;
+}
+*/
+
+
+/*
+Difference between div & span:
+div->   display: block
+span->  display: inline
+*/
+
+
+/* 
+Display:    inline / block / inline-block
+clear: both
+
+.clearfix:after,
+.clearfix:before {
+  content : "";
+  display : table
+}
+
+.clearfix:after {
+  clear: both ;
+}
+
+width: calc(33.33% - 1rem);
+
+.sidebar {
+  width: 33.33%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+<div class="btn"></div>
+position: absolute;
+position: relative;
+position: fixed;
+
+margin: 0 auto;
+
+::placeholder
+
+.form input:not([type="checkbox"])
+  
+border-radius: 4px;
+
+transform: rotate(45deg);   
+
+<input type="checkbox" name="rules" id="rules"> قوانین را قبول دارم
+<span class="checkmark"></span>
+
+.form input:focus {
+  background: #ddf1f2;
+  outline: none;
+  border: 1px solid #607f81!important
+}
+
+min-width: 800px;
+
+@media(min-width:768px){
+}
+
+orientation: landscape;
+
+.cube{
+    transform-origin: top left;
+    transform: perspective(100px) scaleX(1.5) rotateZ(20deg) skewX(-40deg) translateY(120px);
+    perspective-origin: bottom;
+
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+animation: runCube 3s ease-in 2s infinite alternate-reverse fill-mode;
+}
+
+@keyframes runCube{
+    0%{
+    }
+    40%{
+    }
+    100%{
+    }
+}
+
+*/
